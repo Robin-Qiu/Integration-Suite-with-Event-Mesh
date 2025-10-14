@@ -64,8 +64,8 @@ In the **“Design”** part (**Pencil icon**) on the left side menu of the SAP 
 
 1. Provide the following details:
 
-    * **Name**: Orders_AC233083U01
-    * **Technical Name** will be auto-filled with OrdersAC233083U01
+    * **Name**: Orders_USERXX
+    * **Technical Name** will be auto-filled with OrdersUSERXX
     * **Short description**: This package contains artifacts to process orders.
 
 1. Click on **Save** once finished.

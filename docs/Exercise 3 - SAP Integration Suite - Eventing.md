@@ -59,30 +59,34 @@ Please find the details on the configuration in the following video.
 [Enable SAP Cloud Integration to consume messages from Event Mesh](https://blogs.sap.com/2022/06/14/blog-post-enable-sap-cloud-integration-suite-to-consume-messages-from-sap-event-mesh-service/)
 
 ## Access the Event Mesh
-1. Follow link for the [SAP Event Mesh](https://integration-suite-academy-us10.enterprise-messaging.cfapps.us10.hana.ondemand.com/) service
+1. Follow link for the [SAP Event Mesh](https://csd.integrationsuite.cpi.cn20.apps.platform.sapcloud.cn/shell/configureeventmesh/overview) service
 ## Configure Event Mesh Queue
-1. Go to **Message Clients**
+1. Go to **Configure -> Event Mesh**
 
-1. Select Message client named **ems**
+1. Select Message client named **emis**
 
-    ![](vx_images/263536669015632.png)
+   ![](vx_images/306991414808078.png)
 
 1. Click **Queues => Create Queue**
 
-    ![](vx_images/84475592968316.png)
+![](vx_images/560290737555944.png)
 
-1. In Queue Name: **AC233083U01** and select **Create** button to create queue.
+1. In Queue Name: **USERXX** and select **Create** button to create queue.
 
-![](vx_images/489114504401499.png)
+![](vx_images/171144372780179.png)
+
 ## Subscribe to a Topic in Event Mesh
-1. Click on the action button and select **Queue Subscriptions**
+1. Click on the queue and select **Subscriptions**
 
-    ![](vx_images/351796659172587.png)
+    Click **Create**
 
-1. Enter Topic : sap/vr/A/s4/ta/**AC233083U01**/*
+   ![](vx_images/446034054220981.png)
 
-    ![](vx_images/212225872973890.png)
-Select **Add**.
+1. Enter Topic : sap/vr/A/s4/ta/**USERXX**/*
+
+    ![](vx_images/125204745820270.png)
+
+    Click **Create**.
 
 1. Select **Close**
 
