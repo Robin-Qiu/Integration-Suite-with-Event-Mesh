@@ -213,7 +213,7 @@ You can see that the Cloud Integration service has prebuilt parts of the integra
 We will use Postman to change the Sales Order via OData and S/4HANA will generate chagne event. The event will trigger the iFlow to log the event data.
 
 > **Note**: We will use Postman to do Sales Order change with OData.
-> Please download the Test Collection
+> Please download the [Test Collection](https://github.com/Robin-Qiu/Integration-Suite-with-Event-Mesh/blob/main/docs/vx_attachments/542514425279645/GC%20CSM%20Customer%20Success%20Day.postman_collection.json)
 
 1. Use your user ID to fetch the boundled Sales Order
 
