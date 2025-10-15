@@ -99,14 +99,15 @@ Place it in the integration flow by clicking inside the integration process
 ![](vx_images/43743444448199.png)
 7. Switch to **Message Body** tab, paste the content given below:
 ```xml
-<ndf:NDFDgenByDay xmlns:ndf="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl">
-	<latitude>35.4</latitude>
-	<longitude>-97.6</longitude>
-	<startDate/>
-	<numDays>1</numDays>
-	<Unit>m</Unit>
-	<format>24 hourly</format>
-</ndf:NDFDgenByDay>
+  <ndf:NDFDgenByDay xmlns:ndf="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl">
+            <latitude>35.4</latitude>
+            <longitude>-97.6</longitude>
+            <startDate>2025-10-15</startDate>
+            <numDays>1</numDays>
+            <Unit>m</Unit>
+            <XMLformat >DWML</XMLformat>
+            <format>24 hourly</format>
+  </ndf:NDFDgenByDay>
 ```
 Click **Save**
 > **Note**: This latitude and longitude is of **Oklahoma City**.
@@ -124,10 +125,12 @@ Select **SOAP 1.x** as Message Protocol
 ![](vx_images/319645416684934.gif)
 
 10. Switch to **Connection** Tab, enter the following details:
-* a. Address:
-**https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php**
+* a. Address: **https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php**
 * b. Select Authentication as **“None”**
 Keep all other parameters as it is.
+
+
+ 
 
 Click **Save**
 > **Note**: In case, this service is not available we need to change the service endpoint to mocked weather service which is deployed on the Integration Suite tenant for you. Also, you need to change the Authentication to Basic
@@ -148,7 +151,7 @@ Switch to **Exchange Property** tab, click on **Add** and add following properti
 * Name: **responseResult**
 * Type: **XPath**
 * Data Type: **java.lang.String**
-* Value: **//\* [local-name()='dwmlByDayOut']/text()**
+* Value: **//\* [local-name()='XMLByDayOut']/text()**
 
 Click **Save**
 
@@ -268,7 +271,25 @@ Once the deployment is completed successfully you will receive a 2^nd^ notificat
 
 
 3. Verify if the deployment is successful:
-In the first level Menu Bar switch to Section **Monitor** and then click on **All** in **Manage Integration Content**.
-You should see an entry with your integration flow.
-Check the ‘status’. It should be in status **Started**.
-![SNAGHTML43439be8](_v_images/20190825230409484_22250.png)
+In the first level Menu Bar switch to Section **Monitor** and then click on **All** in **Integration and APIs**.
+![](vx_images/7022920526518.png)
+
+1. You should see the message status and log payload
+
+    ![](vx_images/399225466662663.png)
+
+   ![](vx_images/102285962295884.png)
+
+
+
+1. Navigate back to the to the **Monitor** page and check the data store
+
+    ![](vx_images/395696472944019.png)
+
+1. There should be one weather record stored 
+![](vx_images/142396552151981.png)
+
+<br>
+
+**Congratulations!**
+You have successfully finished this hands-on workshop!
