@@ -5,19 +5,9 @@
             "attachment_folder": "",
             "created_time": "2025-10-08T09:52:46Z",
             "id": "5514",
-            "modified_time": "2025-10-11T22:57:04Z",
+            "modified_time": "2025-10-15T16:18:00Z",
             "name": "README.md",
             "signature": "10217947453456972845",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2025-10-08T09:52:50Z",
-            "id": "5516",
-            "modified_time": "2025-10-11T08:26:53Z",
-            "name": "Exercise 1 - SAP Integration Suite - API Layer.md",
-            "signature": "15279705070517156909",
             "tags": [
             ]
         },
@@ -25,27 +15,17 @@
             "attachment_folder": "417927952482618",
             "created_time": "2025-10-08T09:56:01Z",
             "id": "5518",
-            "modified_time": "2025-10-12T13:39:28Z",
+            "modified_time": "2025-10-15T16:20:57Z",
             "name": "_sidebar.md",
             "signature": "2202133410634857517",
             "tags": [
             ]
         },
         {
-            "attachment_folder": "",
-            "created_time": "2025-10-08T09:58:34Z",
-            "id": "5521",
-            "modified_time": "2025-10-12T15:41:38Z",
-            "name": "Exercise 2 - SAP Integration Suite - Process Integration.md",
-            "signature": "16172683368979823661",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
+            "attachment_folder": "542514425279645",
             "created_time": "2025-10-08T10:01:13Z",
             "id": "5524",
-            "modified_time": "2025-10-13T08:19:48Z",
+            "modified_time": "2025-10-15T16:10:59Z",
             "name": "Exercise 3 - SAP Integration Suite - Eventing.md",
             "signature": "196114943004179501",
             "tags": [
@@ -55,7 +35,7 @@
             "attachment_folder": "",
             "created_time": "2025-10-10T12:29:24Z",
             "id": "5540",
-            "modified_time": "2025-10-10T12:29:24Z",
+            "modified_time": "2025-10-15T16:18:22Z",
             "name": "index.html",
             "signature": "12150837724846816302",
             "tags": [

@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "070a91f6-8642-467a-adc0-cc82b8c3fe4b",
+		"name": "GC CSM Customer Success Day",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8487900"
+	},
+	"item": [
+		{
+			"name": "Get Sales Order",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"accessTokenUrl": "https://csd.authentication.cn20.platform.sapcloud.cn/oauth/token",
+						"clientSecret": "a9a7ab84-f6c3-4a5b-af08-f0a5f4a46846$2vjJdPsJPXMJPx4sFVaONF-G5HhWKoNg6b-XsBOx5FE=",
+						"clientId": "sb-1a9580b8-5eaf-466a-8ab2-663d53f9c44e!b689|it-rt-csd!b198",
+						"grant_type": "client_credentials",
+						"tokenName": "IS_Token",
+						"addTokenTo": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<UserName>USER28</UserName>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "https://csd.it-cpi032-rt.cpi.cn20.apps.platform.sapcloud.cn/http/getSalesOrder"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Sales Order",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"accessTokenUrl": "https://csd.authentication.cn20.platform.sapcloud.cn/oauth/token",
+						"clientSecret": "a9a7ab84-f6c3-4a5b-af08-f0a5f4a46846$2vjJdPsJPXMJPx4sFVaONF-G5HhWKoNg6b-XsBOx5FE=",
+						"clientId": "sb-1a9580b8-5eaf-466a-8ab2-663d53f9c44e!b689|it-rt-csd!b198",
+						"grant_type": "client_credentials",
+						"tokenName": "IS_Token",
+						"addTokenTo": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    \r\n<root>\r\n    <SalesOrder>640211</SalesOrder>\r\n    <IncotermsLocation1>Shanghai</IncotermsLocation1>\r\n</root>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "https://csd.it-cpi032-rt.cpi.cn20.apps.platform.sapcloud.cn/http/updateSalesOrder"
+			},
+			"response": []
+		}
+	]
+}
