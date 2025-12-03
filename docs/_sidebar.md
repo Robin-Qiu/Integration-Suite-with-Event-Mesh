@@ -2,12 +2,12 @@
 
 ![](vx_images/288853594065488.png)
 
-<h2 style="text-align: center;"># 动手练习 #</h2>
+<h2 style="text-align: center;"># Hands-on Exercises #</h2>
 
 ---
-* [简介](/)
-* [练习 01：利用图形界面设计集成工作流](Exercise00%20-%20Smoke%20Test%20Monitoring%20via%20WebUI.md)
-* [练习 02：利用Event Mesh 设计事件驱动接口](Exercise%203%20-%20SAP%20Integration%20Suite%20-%20Eventing.md)
+
+* [Exercise00 - Smoke Test Monitoring via WebUI](Exercise00%20-%20Smoke%20Test%20Monitoring%20via%20WebUI.md)
+* [Exercise01 - Parsing SOAP message and transform on demand](Exercise01%20-%20Parsing%20SOAP%20message%20and%20transform%20on%20demand%20.md)
 
 
 

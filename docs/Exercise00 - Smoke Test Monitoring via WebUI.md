@@ -1,4 +1,4 @@
-# <font color=#ee9955 size=8 face="黑体">Smoke Test Monitoring via WebUI</font>
+# <font color=#ee9955 size=8 face="黑体"> Exercise 00 - Smoke Test Monitoring via WebUI</font>
 
 ## Prerequisites  
  - **SAP BTP Account:** You should have created the BTP account and set up the Integration Suite tenant.
