@@ -3,9 +3,7 @@
 ## Prerequisites  
  - **SAP BTP Account:** You should have created the BTP account and set up the Integration Suite tenant.
 
----
 
-> **Note**: If you do not set up your own tenant, please use this [Integration Suite](https://csd.integrationsuite.cpi.cn40.apps.platform.sapcloud.cn/shell/home) for the Hands-on purpose. 
 
 ---
 
