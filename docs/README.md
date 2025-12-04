@@ -1,6 +1,6 @@
 <div class="draftWatermark"></div>
 
-<h1 style="text-align: center;color:blue;font-weight:bold;">「SAP BTP Adoption Lab」—— Integration Suite #</h1>
+<h1 style="text-align: center;color:blue;font-weight:bold;">「SAP BTP Adoption Lab」—— # Integration Suite #</h1>
 <h3 style="text-align: center;"> Hands-on Exercises </h3>
 
 
