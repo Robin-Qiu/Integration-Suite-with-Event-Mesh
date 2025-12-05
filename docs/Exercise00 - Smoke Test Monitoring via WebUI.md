@@ -73,10 +73,10 @@ Similarly, click on Start Message, select **Delete**
 
 4.	Now, let's model the integration flow
 
-Select **Timer** from Palette
-**Events -> Timer**
+    Select **Timer** from Palette
+    **Events -> Timer**
 
-Place it in the integration flow by clicking inside the integration process
+    Place it in the integration flow by clicking inside the integration process
 
 ![](vx_images/447252934989392.png)
 
@@ -96,19 +96,19 @@ Place it in the integration flow by clicking inside the integration process
 6. 	From the palette, select **Message Transformers -> Content Modifier** and drop it on the connection between **Timer** and **End messag**e in the Integration flow. This would automatically create the connections. Place it in the integration flow by clicking inside the integration process
 ![](vx_images/43743444448199.png)
 7. Switch to **Message Body** tab, paste the content given below:
-```xml
-  <ndf:NDFDgenByDay xmlns:ndf="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl">
-            <latitude>35.4</latitude>
-            <longitude>-97.6</longitude>
-            <startDate>2025-10-15</startDate>
-            <numDays>1</numDays>
-            <Unit>m</Unit>
-            <XMLformat >DWML</XMLformat>
-            <format>24 hourly</format>
-  </ndf:NDFDgenByDay>
-```
-Click **Save**
-> **Note**: This latitude and longitude is of **Oklahoma City**.
+    ```xml
+    <ndf:NDFDgenByDay xmlns:ndf="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl">
+                <latitude>35.4</latitude>
+                <longitude>-97.6</longitude>
+                <startDate>2025-10-15</startDate>
+                <numDays>1</numDays>
+                <Unit>m</Unit>
+                <XMLformat >DWML</XMLformat>
+                <format>24 hourly</format>
+    </ndf:NDFDgenByDay>
+    ```
+    Click **Save**
+    > **Note**: This latitude and longitude is of **Oklahoma City**.
 
 ![](vx_images/154743902089733.png)
 
@@ -119,20 +119,20 @@ Click **Save**
 This would open the receiver adapter list.
 Select **SOAP** adapter
 
-Select **SOAP 1.x** as Message Protocol
+    Select **SOAP 1.x** as Message Protocol
 ![](vx_images/319645416684934.gif)
 
 10. Switch to **Connection** Tab, enter the following details:
-* a. Address: **https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php**
-* b. Select Authentication as **“None”**
-Keep all other parameters as it is.
+    * a. Address: **https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php**
+    * b. Select Authentication as **“None”**
+    Keep all other parameters as it is.
 
 
- 
+    
 
-Click **Save**
-> **Note**: In case, this service is not available we need to change the service endpoint to mocked weather service which is deployed on the Integration Suite tenant for you. Also, you need to change the Authentication to Basic
-Instructor will provide you the SOAP Endpoint of mocked weather service.
+    Click **Save**
+    > **Note**: In case, this service is not available we need to change the service endpoint to mocked weather service which is deployed on the Integration Suite tenant for you. Also, you need to change the Authentication to Basic
+    Instructor will provide you the SOAP Endpoint of mocked weather service.
 
 ![](vx_images/520153239720182.png)
 11.  Click on Receiver system and set Name as **Global_Weather**
