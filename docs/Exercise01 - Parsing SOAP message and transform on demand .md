@@ -62,19 +62,19 @@
 ![2025-12-03_18-46-54 (1)](vx_images/199688266268690.gif)
 
 12. Switch to **Connection** tab, enter the following details: 
-    a. Address: **smtp.gmail.com:465**
-    b. Protection:    **SMTPS**
-    c. Authentication: **Plain User/Password**
-    d. Credential Name:    **GMAIL_USER**
-    e. From: Mail ID from where you want to send the mail.
-    (In exercise we use: developer.qiu@gmail.com)
-    f. To: Mail ID where you want to receive the mail.
-    (eg. testto@gmail.com)
-    g. Subject: **Income Tax Details for PAN5678**
-    h. Under Attachments, click on **Add**, enter:
-        1) Name: **Income_Tax_Details.csv**
-        2) Mime-Type: **Text/CSV**
-        3) Source: **Body**
+    a. Address: **smtp.gmail.com:465** 
+    b. Protection:    **SMTPS** 
+    c. Authentication: **Plain User/Password** 
+    d. Credential Name:    **GMAIL_USER** 
+    e. From: Mail ID from where you want to send the mail. 
+    (In exercise we use: developer.qiu@gmail.com) 
+    f. To: Mail ID where you want to receive the mail. 
+    (eg. testto@gmail.com) 
+    g. Subject: **Income Tax Details for PAN5678** 
+    h. Under Attachments, click on **Add**, enter: 
+        1) Name: **Income_Tax_Details.csv** 
+        2) Mime-Type: **Text/CSV** 
+        3) Source: **Body** 
     **Save**
    
 ![SNAGHTML6b6bf83](_v_images/20190829155125738_12175.png) 
