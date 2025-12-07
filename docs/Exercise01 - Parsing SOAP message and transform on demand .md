@@ -1,10 +1,10 @@
-# <font color=#ee9955 size=8 face="黑体"> Exercise 01 - Parsing SOAP message and transform on demand </font>
+# <font color=#ee9955 size=8 face="Arial"> Exercise 01 - Parsing SOAP message and transform on demand </font>
 
 
 
-## Details
+## 1. Details
 
-##### Define and edit integration flow
+##### 1.1.1.1. Define and edit integration flow
 1. Navigate to **Artifacts** Tab
 ![](vx_images/204035469315867.png)
 
@@ -14,11 +14,11 @@
 ![](vx_images/141201755614541.png)
 
 3. Select **Create** and enter the following details:
-    a. Name: **Exercise01_XX**
-    b. Description: **Exercise01_WebUI_SOAP_Mail_MessageTransformers_Router_Filter_TestMapping_Converter_ContentModifier**
-    c. Sender: **SOAP**
-    d. Receiver: **Mail**
-    e. Click on **OK**
+a. Name: **Exercise01_XX**
+b. Description: **Exercise01_WebUI_SOAP_Mail_MessageTransformers_Router_Filter_TestMapping_Converter_ContentModifier**
+c. Sender: **SOAP**
+d. Receiver: **Mail**
+e. Click on **OK**
 **Note**: Please remember to save after every action
 ![](vx_images/289942763578925.png)
 
@@ -41,19 +41,23 @@
 ![2025-12-03_18-26-52 (1)](vx_images/275625245375707.gif)
 
 9. Switch to **Connection** tab, enter the following details:
-    a. Address: **/Exercise01_XX** (make sure this address is unique on tenant)
-    b. Service Definition as
-    **WSDL**
-    c. URL to WSDL, click on **Select**
-    d. Click on **Upload from File System**
-    e. Select **userdata_wp.wsdl** (provided by instructor)
-    f. Processing Settings as **WS Standard**
-    g. Authorization as **User Role**
-    **Save**
+    * a. Address: **/Exercise01_XX** (make sure this address is unique on tenant)
+    * b. Service Definition as **WSDL**
+    * c. URL to WSDL, click on **Select**
+    * d. Click on **Upload from File System**
+    * e. Select **userdata_wp.wsdl** (provided by instructor)
+    * f. Processing Settings as **WS Standard**
+    * g. Authorization as **User Role**
+    
+ Click **Save**
+ 
 ![](vx_images/488825766856933.png)
 
-10. Click on the empty space near Integration scenario, the following namespace mapping is added automatically in **Runtime Configuration**
-**xmlns:p1=http://sapcd.com/taxagt**
+10. Click on the empty space near Integration scenario, the following namespace mapping is added automatically in **Runtime Configuration**:
+```
+xmlns:p1=http://sapcd.com/taxagt
+```
+
 ![](vx_images/352947962590657.png)
 
 11. Click on **End** message step, select **Connector** and drag it to **Individual_Mail** receiver system.
@@ -61,21 +65,20 @@
     Select **Mail** adapter
 ![2025-12-03_18-46-54 (1)](vx_images/199688266268690.gif)
 
-12. Switch to **Connection** tab, enter the following details: 
-    a. Address: **smtp.gmail.com:465** 
-    b. Protection:    **SMTPS** 
-    c. Authentication: **Plain User/Password** 
-    d. Credential Name:    **GMAIL_USER** 
-    e. From: Mail ID from where you want to send the mail. 
-    (In exercise we use: developer.qiu@gmail.com) 
-    f. To: Mail ID where you want to receive the mail. 
-    (eg. testto@gmail.com) 
-    g. Subject: **Income Tax Details for PAN5678** 
-    h. Under Attachments, click on **Add**, enter: 
-        1) Name: **Income_Tax_Details.csv** 
-        2) Mime-Type: **Text/CSV** 
-        3) Source: **Body** 
-    **Save**
+12. Switch to **Connection** tab, enter the following details:
+    * a. Address: **smtp.gmail.com:465**
+    * b. Protection:    **SMTPS**
+    * c. Authentication: **Plain User/Password**
+    * d. Credential Name:    **GMAIL_USER**
+    * e. From: Mail ID from where you want to send the mail. (In exercise we use: developer.qiu@gmail.com)
+    * f. To: Mail ID where you want to receive the mail. (eg. testto@gmail.com) 
+    * g. Subject: **Income Tax Details for PAN5678**
+    * h. Under Attachments, click on **Add**, enter:
+        1) Name: **Income_Tax_Details.csv**
+        2) Mime-Type: **Text/CSV**
+        3) Source: **Body**
+        
+Click **Save**
    
 ![SNAGHTML6b6bf83](_v_images/20190829155125738_12175.png) 
 ![](vx_images/479883180914812.png)
@@ -334,7 +337,7 @@ xmlns:p1=http://sapcd.com/taxagt;xmlns:tax=https://taxschemas.netweaver.neo.com/
 45. Your integration flow should look like this.
 ![SNAGHTML846030f](_v_images/20190829230731655_129.png)
 
-##### Deploy Integration Project on tenant
+##### 1.1.1.2. Deploy Integration Project on tenant
 1. Press **Deploy** in the Integration Flow Task Bar.
 ![](vx_images/576711437302749.png)
 
@@ -352,7 +355,7 @@ xmlns:p1=http://sapcd.com/taxagt;xmlns:tax=https://taxschemas.netweaver.neo.com/
 ![](vx_images/269173557622827.png)
 ![](vx_images/485414535275618.png)
 
-##### Execute end to end scenario
+##### 1.1.1.3. Execute end to end scenario
 1. Open your **Postman** and import the **IS Exercises** collecion
     a. Open **Exercise01** request
 ![](vx_images/510345442935456.png)

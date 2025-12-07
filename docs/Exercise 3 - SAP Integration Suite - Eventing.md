@@ -9,8 +9,8 @@
 
 
 # SAP Integration Suite - Eventing
-## Script Overview
-### Highlights
+## 1. Script Overview
+### 1.1. Highlights
 In this section, you will familiarize yourself with the concepts of eventing.
 
 Events allow us to react to changes, by informing that something has changed.
@@ -19,15 +19,15 @@ In our scenario we will use event mesh to synchronise the quantity from Sales Or
 
 During the course of this exercise, you will create a queue that will receive changed order events. Next, you will build an iflow to consume the changed order data and update the maintenance contract database.
 
-### Prerequisites
+### 1.2. Prerequisites
 * Your Session-User, provided via mail or by your instructor
 * Access to the landing page of your Session-Account via link, provided via mail or by your instructor
-### Goal
+### 1.3. Goal
 The goal of this section is to configure Event Mesh and SAP Cloud Integration to react on the changed quantity of a sales order in S/4HANA and update the related Maintenance Contracts database.
 
-### Further information
+### 1.4. Further information
 [SAP BTP Event Mesh documentation](https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/df532e8735eb4322b00bfc7e42f84e8d.html)
-### Exercise map
+### 1.5. Exercise map
 In the following chapters of this exercise you will use SAP Event Mesh.
 
 
@@ -44,7 +44,7 @@ In the following chapters of this exercise you will use SAP Event Mesh.
 In this chapter, we will try to listen to the events created in the **S/4 HANA** On-Premise system, when we change an already created sales order.
 
 
-## Backend Setup
+## 1. Backend Setup
 There is no need for the participants to do the backend setup as it is a one time activity that we already done in the setup.
 
 Please find the details on the configuration in the following video.
@@ -57,9 +57,9 @@ Please find the details on the configuration in the following video.
 
 [Enable SAP Cloud Integration to consume messages from Event Mesh](https://blogs.sap.com/2022/06/14/blog-post-enable-sap-cloud-integration-suite-to-consume-messages-from-sap-event-mesh-service/)
 
-## Access the Event Mesh
+## 2. Access the Event Mesh
 1. Follow link for the [SAP Event Mesh](https://csd.integrationsuite.cpi.cn20.apps.platform.sapcloud.cn/shell/configureeventmesh/overview) service
-## Configure Event Mesh Queue
+## 3. Configure Event Mesh Queue
 1. Go to **Configure -> Event Mesh**
 
 1. Select Message client named **emis**
@@ -74,7 +74,7 @@ Please find the details on the configuration in the following video.
 
 ![](vx_images/171144372780179.png)
 
-## Subscribe to a Topic in Event Mesh
+## 4. Subscribe to a Topic in Event Mesh
 1. Click on the queue and select **Subscriptions**
 
     Click **Create**
@@ -89,7 +89,7 @@ Please find the details on the configuration in the following video.
 
 
 
-## Design the iFlow to consume the event
+## 5. Design the iFlow to consume the event
 
 
 1. Make sure that you are in **Edit** mode (**Save** is displayed instead of **Edit**) of the package and click on **Add** and select **Integration flow**.
@@ -113,7 +113,7 @@ Please find the details on the configuration in the following video.
 
 ![](vx_images/193383392982636.png)
 
-## Develop the integration flow
+## 6. Develop the integration flow
 You can see that the Cloud Integration service has prebuilt parts of the integration flow, including Sender, Receiver, Start and End flow steps.
 
 1. Click on the **Edit** button to start making changes to your integration flow.
@@ -209,7 +209,7 @@ You can see that the Cloud Integration service has prebuilt parts of the integra
     ![](vx_images/107146450769977.png)
 
 
-## Testing
+## 7. Testing
 We will use Postman to change the Sales Order via OData and S/4HANA will generate chagne event. The event will trigger the iFlow to log the event data.
 
 > **Note**: We will use Postman to do Sales Order change with OData.
